@@ -10,7 +10,7 @@ const layoutConfig = {
     sidebar: {
         open: true,
         hide: false,
-        variant: SIDEBAR_VARIANTS.PERSISTENT,
+        variant: SIDEBAR_VARIANTS.TEMPORARY,
         style: SIDEBAR_STYLES.FULL_HEIGHT,
         view: SIDEBAR_VIEWS.FULL,
         scrollType: SIDEBAR_SCROLL_TYPES.FIXED,
@@ -21,7 +21,7 @@ const layoutConfig = {
         fixed: true,
     },
     footer: {
-        hide: false,
+        hide: true,
     },
     root: {
     },

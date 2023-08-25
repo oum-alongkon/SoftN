@@ -26,6 +26,7 @@ const Header = () => {
 
     return (
         <React.Fragment>
+            
             {
                 (
                     sidebarOptions.style === SIDEBAR_STYLES.CLIPPED_UNDER_HEADER
@@ -48,10 +49,13 @@ const Header = () => {
                     </IconButton>
             }
             {
-                sidebarOptions?.style === SIDEBAR_STYLES.CLIPPED_UNDER_HEADER &&
                 <Logo sx={{mr: 3}} mode={headerTheme.type ?? "light"}/>
             }
-            {
+            {/* {
+                sidebarOptions?.style === SIDEBAR_STYLES.CLIPPED_UNDER_HEADER &&
+                <Logo sx={{mr: 3}} mode={headerTheme.type ?? "light"}/>
+            } */}
+            {/* {
                 showDropdownSearch &&
                 <Slide in={dropdownSearchVisibility}>
                     <Div
@@ -93,15 +97,15 @@ const Header = () => {
                         </IconButton>
                     </Div>
                 </Slide>
-            }
-            {
+            } */}
+            {/* {
                 !showDropdownSearch &&
                 <SearchGlobal
                     sx={{
                         maxWidth: {xs: 240, md: 320}
                     }}
                 />
-            }
+            } */}
             <Stack direction="row" alignItems="center" spacing={1.25} sx={{ml: "auto"}}>
                 {
                     showDropdownSearch &&

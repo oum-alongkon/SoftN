@@ -16,7 +16,7 @@ import SidebarSkeleton from "./SidebarSkeleton";
 const Sidebar = () => {
     return (
         <React.Fragment>
-            <SidebarHeader/>
+            {/* <SidebarHeader/> */}
             <JumboScrollbar
                 autoHide
                 autoHideDuration={200}
@@ -59,7 +59,7 @@ const SidebarHeader = () => {
                 sidebarOptions?.style !== SIDEBAR_STYLES.CLIPPED_UNDER_HEADER &&
                 <DrawerHeader>
                     <Logo mini={isMiniAndClosed} mode={sidebarTheme.type}/>
-                    {
+                    {/* {
                         sidebarOptions?.view !== SIDEBAR_VIEWS.MINI &&
                         <Zoom in={sidebarOptions?.open}>
                             <IconButton
@@ -72,7 +72,7 @@ const SidebarHeader = () => {
                                 <MenuOpenIcon/>
                             </IconButton>
                         </Zoom>
-                    }
+                    } */}
                 </DrawerHeader>
             }
         </React.Fragment>

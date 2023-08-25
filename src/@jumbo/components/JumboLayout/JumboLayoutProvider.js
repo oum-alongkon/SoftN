@@ -25,7 +25,7 @@ const init = (activeLayoutConfig) => {
             hide: false,
             width: 240,
             minWidth: 80,
-            variant: SIDEBAR_VARIANTS.PERSISTENT,
+            variant: SIDEBAR_VARIANTS.TEMPORARY,
             style: SIDEBAR_STYLES.FULL_HEIGHT,
             scrollType: SIDEBAR_SCROLL_TYPES.FIXED,
             ...(activeLayoutConfig?.layoutOptions?.sidebar ? activeLayoutConfig?.layoutOptions?.sidebar : {}),
@@ -173,7 +173,7 @@ const JumboLayoutProvider = ({children}) => {
     React.useEffect(() => {
         if (!isNotMobile) {
             setSidebarOptions({
-                variant: SIDEBAR_VARIANTS.PERSISTENT,
+                variant: SIDEBAR_VARIANTS.TEMPORARY,
                 style: SIDEBAR_STYLES.FULL_HEIGHT,
                 view: SIDEBAR_VIEWS.FULL,
                 open: false,

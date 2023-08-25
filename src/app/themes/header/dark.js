@@ -1,13 +1,13 @@
 import {alpha} from "@mui/material/styles";
 
 export const headerTheme = {
-    type: "light",
+    type: "dark",
     components: {
         MuiAppBar: {
             styleOverrides: {
                 root: {
                     color: '#FFFFFF',
-                    background: '#222D45'
+                    background: 'none'
                 }
             }
         },
